@@ -3,7 +3,7 @@
  "start_beijing": "19:30:00",
  "end_beijing": "20:30:00",
  "anchor": "主播A",
- "car": "示例车型 N70",
+ "car": "小米SU7（示例）",
  "headline": {
   "spend": 120.0,
   "leads": 2,
@@ -13,7 +13,7 @@
   "avg_watch_s": 14,
   "card_clicks": 30,
   "windmill_clicks": 6,
-  "age_dist": "31–40岁 35%"
+  "age_dist": "24–30岁 38%，31–40岁 33%"
  },
  "lead_times": [
   "19:45:12",

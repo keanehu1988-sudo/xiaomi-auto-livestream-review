@@ -3,7 +3,7 @@
 import sys, json, csv, re, os, datetime
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import load_config
-CFG = load_config(); LO, HI = CFG["cpl_range"]
+CFG = load_config(); B = CFG["benchmarks"]
 if len(sys.argv) < 3: sys.exit(__doc__)
 tr, mj = sys.argv[1:3]
 prefix = sys.argv[3] if len(sys.argv) > 3 else os.path.splitext(tr)[0].replace("_transcript", "")
@@ -41,15 +41,20 @@ with open(prefix + "_align.md", "w") as f:
 # verdicts
 v = {}
 sp, ld = H.get("spend"), H.get("leads")
-if sp is not None and ld:
-    cpl = sp / ld; v["线索成本"] = f"{cpl:.2f} 元 → " + (f"正常({LO}–{HI})" if LO <= cpl <= HI else (f"偏低(<{LO}，好)" if cpl < LO else f"超标(>{HI})"))
-elif sp is not None: v["线索成本"] = "0 线索 → 超标"
 exp, ent = H.get("exposure"), H.get("entries")
-if exp and ent is not None:
-    rate = ent / exp * 100; v["曝光进入率"] = f"{rate:.2f}% → " + ("正常(5–15%)" if 5 <= rate <= 15 else ("偏低" if rate < 5 else "偏高"))
+def judge(x, rng, unit, low="偏低", high="偏高"):
+    lo, hi = rng
+    return f"正常({lo}–{hi}{unit})" if lo <= x <= hi else (f"{low}(<{lo}{unit})" if x < lo else f"{high}(>{hi}{unit})")
+if B.get("cpl_range") and sp is not None:
+    if ld: v["线索成本"] = f"{sp / ld:.2f} 元 → " + judge(sp / ld, B["cpl_range"], "元", "偏低，好", "超标")
+    else: v["线索成本"] = "0 线索 → 超标"
+if B.get("entry_rate_range") and exp and ent is not None:
+    rate = ent / exp * 100; v["曝光进入率"] = f"{rate:.2f}% → " + judge(rate, B["entry_rate_range"], "%")
 aw = H.get("avg_watch_s")
-if aw is not None:
-    v["人均停留"] = f"{aw}s → " + ("正常(10–15s)" if 10 <= aw <= 15 else ("异常(>25s，查闲聊/人少)" if aw > 25 else ("偏短(<10s)" if aw < 10 else "略高(15–25s)")))
+if B.get("avg_watch_range") and aw is not None:
+    ab = B.get("avg_watch_abnormal_above")
+    v["人均停留"] = f"{aw}s → " + (f"异常(>{ab}s，查闲聊/人少)" if ab is not None and aw > ab else judge(aw, B["avg_watch_range"], "s", "偏短", "略高"))
+v["_基准来源"] = "LR_CONFIG 配置" if os.environ.get("LR_CONFIG") else "内置示例参考值（请填写自己的基准）"
 car = (M.get("car") or "").upper()
 tgt = next((a for k, a in CFG["target_ages"].items() if k.upper() in car), None)
 if tgt: v["目标年龄"] = f"{car} 目标 {tgt} 岁；实际年龄分布：{H.get('age_dist', '待填')}"
