@@ -1,0 +1,504 @@
+{
+ "_comment": "示例数据（虚构），仅用于演示格式",
+ "start_beijing": "19:30:00",
+ "end_beijing": "20:30:00",
+ "anchor": "主播A",
+ "car": "示例车型 N70",
+ "headline": {
+  "spend": 120.0,
+  "leads": 2,
+  "exposure": 2000,
+  "entries": 150,
+  "entry_rate": 7.5,
+  "avg_watch_s": 14,
+  "card_clicks": 30,
+  "windmill_clicks": 6,
+  "age_dist": "31–40岁 35%"
+ },
+ "lead_times": [
+  "19:45:12",
+  "20:18:40"
+ ],
+ "per_minute": [
+  {
+   "time": "19:30",
+   "entries": 1,
+   "online": 2,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:31",
+   "entries": 3,
+   "online": 8,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:32",
+   "entries": 6,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:33",
+   "entries": 0,
+   "online": 7,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:34",
+   "entries": 5,
+   "online": 8,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:35",
+   "entries": 4,
+   "online": 2,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:36",
+   "entries": 0,
+   "online": 1,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:37",
+   "entries": 3,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:38",
+   "entries": 4,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:39",
+   "entries": 4,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:40",
+   "entries": 5,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:41",
+   "entries": 0,
+   "online": 7,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:42",
+   "entries": 1,
+   "online": 5,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:43",
+   "entries": 5,
+   "online": 7,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:44",
+   "entries": 2,
+   "online": 5,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:45",
+   "entries": 6,
+   "online": 7,
+   "leads": 1,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:46",
+   "entries": 3,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:47",
+   "entries": 3,
+   "online": 3,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:48",
+   "entries": 0,
+   "online": 8,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:49",
+   "entries": 6,
+   "online": 3,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:50",
+   "entries": 2,
+   "online": 8,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:51",
+   "entries": 3,
+   "online": 1,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:52",
+   "entries": 5,
+   "online": 3,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:53",
+   "entries": 0,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:54",
+   "entries": 3,
+   "online": 6,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:55",
+   "entries": 3,
+   "online": 5,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:56",
+   "entries": 3,
+   "online": 3,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "19:57",
+   "entries": 3,
+   "online": 1,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:58",
+   "entries": 4,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "19:59",
+   "entries": 3,
+   "online": 6,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:00",
+   "entries": 0,
+   "online": 6,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:01",
+   "entries": 6,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:02",
+   "entries": 4,
+   "online": 3,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:03",
+   "entries": 0,
+   "online": 2,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:04",
+   "entries": 3,
+   "online": 1,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:05",
+   "entries": 2,
+   "online": 2,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:06",
+   "entries": 2,
+   "online": 5,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:07",
+   "entries": 1,
+   "online": 5,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:08",
+   "entries": 5,
+   "online": 5,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:09",
+   "entries": 3,
+   "online": 6,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:10",
+   "entries": 0,
+   "online": 1,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:11",
+   "entries": 2,
+   "online": 7,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:12",
+   "entries": 0,
+   "online": 5,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:13",
+   "entries": 4,
+   "online": 7,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:14",
+   "entries": 0,
+   "online": 7,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:15",
+   "entries": 5,
+   "online": 3,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:16",
+   "entries": 4,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:17",
+   "entries": 1,
+   "online": 1,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:18",
+   "entries": 5,
+   "online": 7,
+   "leads": 1,
+   "card_clicks": 0,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:19",
+   "entries": 1,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:20",
+   "entries": 0,
+   "online": 2,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:21",
+   "entries": 5,
+   "online": 3,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:22",
+   "entries": 1,
+   "online": 1,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:23",
+   "entries": 4,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:24",
+   "entries": 1,
+   "online": 1,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:25",
+   "entries": 2,
+   "online": 2,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:26",
+   "entries": 4,
+   "online": 4,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 0
+  },
+  {
+   "time": "20:27",
+   "entries": 5,
+   "online": 7,
+   "leads": 0,
+   "card_clicks": 1,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:28",
+   "entries": 0,
+   "online": 6,
+   "leads": 0,
+   "card_clicks": 2,
+   "windmill_clicks": 1
+  },
+  {
+   "time": "20:29",
+   "entries": 2,
+   "online": 1,
+   "leads": 0,
+   "card_clicks": 0,
+   "windmill_clicks": 0
+  }
+ ]
+}

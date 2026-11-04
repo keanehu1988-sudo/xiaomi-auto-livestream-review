@@ -1,0 +1,7 @@
+*.ts
+*.wav
+out/
+inbox/
+__pycache__/
+*.pyc
+.venv/
